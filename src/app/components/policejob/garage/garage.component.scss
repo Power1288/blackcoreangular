@@ -1,0 +1,68 @@
+.police-garage-container {
+  height: 70vh;
+  width: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-auto-rows: 15% 70% 15%;
+
+  .police-garage-header {
+    background: #2F3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #8E44AD;
+    h1 {
+      font-family: "Poppins", sans-serif;
+      color: #ECF0F1;
+      font-weight: 900;
+      font-size: 2rem;
+
+      @media screen and (max-width: 1280px){
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .police-garage-content {
+    background: #2F3640;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .police-garage-bottom {
+    background: #2F3640;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      padding: 15px 10px;
+      background-color:#ECF0F1;
+      opacity: 90%;
+      color: #2F3640;
+      font-family: "Poppins", sans-serif;
+      width: 40%;
+      height: 50%;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 25px;
+      outline: none;
+      border: none;
+      transition: all 0.2s ease-in-out;
+      will-change: auto;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+}

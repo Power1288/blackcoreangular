@@ -1,0 +1,11 @@
+<div class="police-garage-container">
+  <div class="police-garage-header">
+    <h1>Garage</h1>
+  </div>
+  <div class="police-garage-content">
+    <app-police-vehicle *ngFor="let vehicle of policeJobService.vehicles" [vehicle]="vehicle"></app-police-vehicle>
+  </div>
+  <div class="police-garage-bottom">
+    <button (click)="handleClose()">Quitter</button>
+  </div>
+</div>
