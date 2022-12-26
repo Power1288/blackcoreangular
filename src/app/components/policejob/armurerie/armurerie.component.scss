@@ -1,0 +1,80 @@
+.police-armurerie-container {
+  height: 70vh;
+  width: 70vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-auto-rows: 15% 85%;
+
+  .police-armurerie-header {
+    padding: 0 50px;
+    background: #2F3640;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    border-bottom: 2px solid #8E44AD;
+
+    button {
+      padding: 15px;
+      background-color: #8E44AD;
+      border: none;
+      outline: none;
+      color:#ECF0F1;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      height: 40%;
+      width: 150px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease-in-out;
+      will-change: auto;
+      justify-self: center;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      color: #ECF0F1;
+      font-weight: 900;
+      font-size: 2rem;
+      align-self: center;
+      justify-self: center;
+
+      @media screen and (max-width: 1280px){
+        font-size: 1.5rem;
+      }
+    }
+
+    i {
+      color: #ECF0F1;
+      font-size: 30px;
+      cursor: pointer;
+      justify-self: center;
+    }
+  }
+
+  .police-armurerie-content{
+    padding: 40px;
+    background: #2F3640;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    overflow-y: auto;
+    gap: 50px;
+
+    @media screen and (max-width: 1280px){
+      padding: 20px;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+  }
+
+}

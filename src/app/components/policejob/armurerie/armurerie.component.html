@@ -1,0 +1,10 @@
+<div class="police-armurerie-container">
+  <div class="police-armurerie-header">
+    <button>Gérer</button>
+    <h1>Armurerie</h1>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <div class="police-armurerie-content">
+    <app-weapon-armurerie *ngFor="let weaponArmurerie of policeJobService.weapons" [weapon]="weaponArmurerie"></app-weapon-armurerie>
+  </div>
+</div>
